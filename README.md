@@ -1,208 +1,208 @@
 # HEAD
 
-A list of everything that could go in the `<head>` of your document
+Un elenco di tutto ciò che potrebbe esseci nel `<head>` del tuo documento
 
-## Table of Contents
+## Indice
 
-- [Recommended Minimum](#recommended-minimum)
-- [Elements](#elements)
+- [Minimo consigliato](#minimo-consigliato)
+- [Elementi](#elementi)
 - [Meta](#meta)
-  - [Meta: Not Recommended](#meta-not-recommended)
+  - [Meta: Non raccomandato](#meta-non-raccomandato)
 - [Link](#link)
-  - [Link: Not Recommended](#link-not-recommended)
-  - [Favicons](#favicons)
+  - [Link: Non raccomandato](#link-non-raccomandato)
+  - [Favicon](#favicon)
 - [Social](#social)
   - [Facebook / Open Graph](#facebook--open-graph)
-  - [Facebook / Instant Articles](#facebook--instant-articles)
+  - [Facebook / Articoli interattivi](#facebook--instant-articles)
   - [Twitter](#twitter)
   - [Google+ / Schema.org](#google--schemaorg)
   - [OEmbed](#oembed)
-- [Browsers / Platforms](#browsers--platforms)
+- [Browser / Piattaforme](#browser--piattaforme)
   - [Apple iOS](#apple-ios)
   - [Apple Safari](#apple-safari)
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
-  - [Microsoft Internet Explorer: Legacy, Do Not Use!](#microsoft-internet-explorer-legacy-do-not-use)
-- [Browsers (Chinese)](#browsers-chinese)
+  - [Microsoft Internet Explorer: Legacy, non usare!](#microsoft-internet-explorer-legacy-non-usare)
+- [Browser (Cinesi)](#browser-cinese)
   - [360 Browser](#360-browser)
-  - [QQ Mobile Browser](#qq-mobile-browser)
-  - [UC Mobile Browser](#uc-mobile-browser)
-- [App Links](#app-links)
-- [Notes](#notes)
+  - [QQ Browser mobile](#qq-browser-mobile)
+  - [UC Browser mobile](#uc-browser-mobile)
+- [Link app](#link-app)
+- [Note](#note)
   - [Performance](#performance)
-- [Other Resources](#other-resources)
-- [Related Projects](#related-projects)
-- [Other Formats](#other-formats)
-- [Translations](#translations)
-- [Contributing](#contributing)
-- [Author](#author)
-- [License](#license)
+- [Altre risorse](#altre-risorse)
+- [Progetti correlati](#progetti-correlati)
+- [Altri formati](#altri-formati)
+- [Traduzioni](#traduzioni)
+- [Contribuire](#contribuire)
+- [Autore](#autore)
+- [Licenza](#licenza)
 
-## Recommended Minimum
+## Minimo consigliato
 
-Below are the essential tags for basic, minimalist websites:
+Qui sotto sono riportati i tag essenziali per un sito base, minimalista:
 
 ```html
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title>Page Title</title>
+<!-- I tre meta tag qui sopra *devono* essere i primi nel head; tutti gli altri contenuti del head devono venire *dopo* questi tag -->
+<title>Titolo della pagina</title>
 ```
 
-## Elements
+## Elementi
 
 ``` html
-<!-- Document Title -->
-<title>Page Title</title>
+<!-- Titolo del documento -->
+<title>Titolo della pagina</title>
 
-<!-- Base URL to use for all relative URLs contained within the document -->
+<!-- URL base da usare per tutti gli URL relativi contenuti nel documento -->
 <base href="https://example.com/page.html">
 
-<!-- External CSS -->
+<!-- CSS esterni -->
 <link rel="stylesheet" href="styles.css">
 
-<!-- In-document CSS -->
+<!-- CSS nel documento -->
 <style>
   /* ... */
 </style>
 
 <!-- JavaScript -->
 <script src="script.js"></script>
-<noscript><!--no JS alternative--></noscript>
+<noscript><!-- Codice alternativo no JS --></noscript>
 ```
 
 ## Meta
 
 ``` html
-<meta charset="utf-8"> <!-- set character encoding for the document -->
+<meta charset="utf-8"> <!-- set di codifica dei caratteri per il documento -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<!-- I tre meta tag qui sopra *devono* essere i primi nel head; tutti gli altri contenuti del head devono venire *dopo* questi tag -->
 
-<!-- Allows control over where resources are loaded from -->
+<!-- Permette di controllare da dove vengono caricate le risorse -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
-<!-- Place as early in the document as possible -->
-<!-- Only applies to content below this tag -->
+<!-- Inserirlo nel documento il prima possibile -->
+<!-- Si applica solamente ai contenuti sotto questo tag -->
 
-<!-- Name of web application (only should be used if the website is used as an app) -->
-<meta name="application-name" content="Application Name">
+<!-- Nome della web application (dovrebbe essere usato solo nel caso il sito sia usato come un'app) -->
+<meta name="application-name" content="Nome dell'applicazione">
 
-<!-- Short description of the page (limit to 150 characters) -->
-<!-- In *some* situations this description is used as a part of the snippet shown in the search results. -->
-<meta name="description" content="A description of the page">
+<!-- Breve descrizione della pagina (Massimo 150 caratteri) -->
+<!-- In *alcune* situazioni questa descrizione è usata come parte dello snippet mostrato nei risultati di ricerca. -->
+<meta name="description" content="Descrizione della pagina">
 
-<!-- Control the behavior of search engine crawling and indexing -->
-<meta name="robots" content="index,follow,noodp"><!-- All Search Engines -->
-<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+<!-- Controlla il comportamento di scansione e indicizzazione dei motori di ricerca -->
+<meta name="robots" content="index,follow,noodp"><!-- Tutti i motori di ricerca -->
+<meta name="googlebot" content="index,follow"><!-- Specifico per Google -->
 
-<!-- Tells Google not to show the sitelinks search box -->
+<!-- Dice a Google di non mostrare i sitelink nei risultati di ricerca -->
 <meta name="google" content="nositelinkssearchbox">
 
-<!-- Tells Google not to provide a translation for this page -->
+<!-- Dice a Google di non fornire una traduzione per questa pagina -->
 <meta name="google" content="notranslate">
 
-<!-- Verify ownership for Google Search Console -->
-<meta name="google-site-verification" content="verification_token">
+<!-- Verifica del possesso per la Google Search Console -->
+<meta name="google-site-verification" content="token_di_verifica">
 
-<!-- Used to name software used to build the website (i.e. - WordPress, Dreamweaver) -->
-<meta name="generator" content="program">
+<!-- Usato per indicare il nome del programma utilizzato per costruire il sito web (cioè - WordPress, Dreamweaver) -->
+<meta name="generator" content="programma">
 
-<!-- Short description of your site's subject -->
-<meta name="subject" content="your website's subject">
+<!-- Breve descrizione dell'argomento del tuo sito -->
+<meta name="subject" content="argomento del tuo sito">
 
-<!-- Very short (10 words or less) description. Primarily for academic papers -->
+<!-- Brevissima (10 parole o meno) descrizione. Principalmente per articoli accademici -->
 <meta name="abstract" content="">
 
-<!-- Full domain name or web address -->
+<!-- Nome completo del dominio o dell'indirizzo web -->
 <meta name="url" content="https://example.com/">
 
 <meta name="directory" content="submission">
 
-<!-- Gives a general age rating based on sites content -->
+<!-- Dà un limite generale di età basata sui contenuti del sito -->
 <meta name="rating" content="General">
 
-<!-- Allows control over how referrer information is passed -->
+<!-- Permette il controllo di come sono passate le informazioni del referrer -->
 <meta name="referrer" content="never">
 
-<!-- Disable automatic detection and formatting of possible phone numbers -->
+<!-- Disattiva il rilevamento automatico e la formattazione dei possibili numeri di telefono -->
 <meta name="format-detection" content="telephone=no">
 
-<!-- Completely opt out of DNS prefetching by setting to 'off' -->
+<!-- Disattiva completamente il prefetching DNS impostando questo tag su 'off' -->
 <meta http-equiv="x-dns-prefetch-control" content="off">
 
-<!-- Stores cookie on the client web browser for client identification -->
+<!-- Salva un cookie sul browser per l'identificazione del client -->
 <meta http-equiv="set-cookie" content="name=value; expires=date; path=url">
 
-<!-- Specifies the page to appear in a specific frame -->
-<meta http-equiv="Window-Target" content="_value">
+<!-- Indica alla pagina di caricarsi in un frame specifico -->
+<meta http-equiv="Window-Target" content="_valore">
 
-<!-- Geo tags -->
-<meta name="ICBM" content="latitude, longitude">
-<meta name="geo.position" content="latitude;longitude">
-<meta name="geo.region" content="country[-state]"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
-<meta name="geo.placename" content="city/town"><!-- eg. content="New York City" -->
+<!-- Tag geo -->
+<meta name="ICBM" content="latitudine, longitudine">
+<meta name="geo.position" content="latitudine;longitudine">
+<meta name="geo.region" content="nazione[-stato|zona]"><!-- Codice nazione (ISO 3166-1): obbligatorio, il codice dello stato (ISO 3166-2): opzionale; es. content="IT" / content="IT-MI" -->
+<meta name="geo.placename" content="città"><!-- es. content="Milano" -->
 ```
 
-- [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en)
-- [WHATWG Wiki: MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions)
-- [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
-- [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
+- [Meta tag riconosciuti da Google](https://support.google.com/webmasters/answer/79812?hl=it)
+- [WHATWG Wiki: MetaExtensions (inglese)](https://wiki.whatwg.org/wiki/MetaExtensions)
+- [ICBM su Wikipedia (inglese)](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
+- [Geotagging su Wikipedia (inglese)](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-### Meta: Not Recommended
-Below are the meta attributes which are not recommended for use as they had low adoption rate, or have been deprecated:
+### Meta: Non raccomandato
+Di seguito sono elencati gli attributi *meta* che non sono raccomandati per l'uso a causa del fatto che hanno un basso tasso di adozione, o sono stati deprecati:
 
 ```html
-<!-- Used to declare the document language, but not well supported. Better to use <html lang=""> -->
-<meta name="language" content="en">
+<!-- Usato per indicare la lingua del documento, ma non ben supportato. Meglio usare <html lang="it"> -->
+<meta name="language" content="it">
 
-<!-- Google disregards & Bing considers it an indicator of spam -->
-<meta name="keywords" content="your,keywords,here,comma,separated,no,spaces">
-<!-- No evidence of current use in any search engines -->
+<!-- Google lo ignora e Bing lo considera come indicatore di spam -->
+<meta name="keywords" content="metti,qui,le,tue,keywords,separate,da,virgola,senza,spazi">
+<!-- Nessuna prova di utilizzo recente in nessun morore di ricerca -->
 <meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
 
-<!-- Provides an easy way for spam bots to harvest email addresses -->
+<!-- Fornisce un modo semplice agli *spam bot* per la raccolta di indirizzi e-mail -->
 <meta name="reply-to" content="email@example.com">
 
-<!-- Better to use <link rel="author"> or humans.txt file -->
+<!-- Meglio usare <link rel="author"> o il file humans.txt -->
 <meta name="author" content="name, email@example.com">
 <meta name="designer" content="">
 <meta name="owner" content="">
 
-<!-- Tells search bots to revisit the page after a period. This is not supported because most Search Engines now use random intervals for re-crawling a webpage -->
+<!-- Dice ai motori di ricerca di rivisitare la pagina dopo uno specifico periodo di tempo. Non è supportato poiché la maggior parte dei motori di ricerca usano intervalli casuali per scansionare nuovamente la pagina -->
 <meta name="revisit-after" content="7 days">
 
-<!-- Sends user to a new URL after a certain amount of time -->
-<!-- The W3C recommends that this tag not be used. Google recommends using a server-side 301 redirect instead. -->
+<!-- Manda l'utente ad una nuova URL dopo un dato periodo di tempo -->
+<!-- Il W3C consiglia di non usare questo tag. Google consiglia di usare un redirect 301 lato server al suo posto. -->
 <meta http-equiv="refresh" content="300; url=https://example.com/">
 
-<!-- Describes the topic of the website -->
+<!-- Descrive l'argomento del sito -->
 <meta name="topic" content="">
 
-<!-- Brief summary of the company or purpose of the website -->
+<!-- Breve sommario dell'azienda o lo scopo del sito -->
 <meta name="summary" content="">
 
-<!-- A deprecated tag that does the same as the keywords meta tag -->
+<!-- Un tag deprecato che fa la stessa cosa del meta tag keywords -->
 <meta name="classification" content="business">
 
-<!-- Does the same as URL, older and not supported -->
+<!-- Fa la stessa cosa di URL, più vechio e non supportato -->
 <meta name="identifier-URL" content="https://example.com/">
 
-<!-- Similar function to the keywords tag -->
+<!-- Funzione simile al tag keyword -->
 <meta name="category" content="">
 
-<!-- Makes sure your website shows up in all countries and languages -->
+<!-- Si assicura che il tuo sito sia visibile in tutte le nazioni e in tutte le lingue -->
 <meta name="coverage" content="Worldwide">
 
-<!-- Does the same as the coverage tag -->
+<!-- Uguale al tag coverage -->
 <meta name="distribution" content="Global">
 
-<!-- Controls what user can access on the internet -->
+<!-- COntrolla a cosa può accedere l'utente via internet -->
 <meta http-equiv="Pics-label" content="value">
 
-<!-- Cache Control -->
-<!-- Better to configure cache control server side -->
+<!-- Controllo della cache -->
+<!-- Meglio configurare il controllo della cache lato server -->
 <meta http-equiv="Expires" content="0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
@@ -211,111 +211,111 @@ Below are the meta attributes which are not recommended for use as they had low 
 ## Link
 
 ``` html
-<!-- Helps prevent duplicate content issues -->
+<!-- Aiuta a evitare i problemi dovuti ai contenuti duplicati -->
 <link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
 
-<!-- Used to be included before the icon link, but is deprecated and no longer is used -->
+<!-- Era usato prima del link icon, ma è deprecato e non più usato -->
 <link rel="shortlink" href="https://example.com/?p=42">
 
-<!-- Links to an AMP HTML version of the current document -->
+<!-- Link alla versione AMP HTML del documento corrente -->
 <link rel="amphtml" href="https://example.com/path/to/amp-version.html">
 
-<!-- Points to a CSS stylesheet -->
+<!-- Punta ad un foglio di stile CSS -->
 <link rel="stylesheet" href="https://example.com/styles.css">
 
-<!-- Links to a JSON file that specifies "installation" credentials for web applications -->
+<!-- Collegamento ad un file JSON che specifica le credenziali di "installazione" per l'applicazione web -->
 <link rel="manifest" href="manifest.json">
 
-<!-- Links to the author of the document -->
+<!-- Link all'autore del documento -->
 <link rel="author" href="humans.txt">
 
-<!-- Refers to a copyright statement that applies to the links context -->
+<!-- Fa riferimento a una dichiarazione di copyright applicata al contesto del link -->
 <link rel="copyright" href="copyright.html">
 
-<!-- Gives a reference to a location in your document that may be in another language -->
+<!-- Fa riferimento ad una posizione nel documento che potrebbe essere in un altra lingua -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 
-<!-- Gives information about an author or another person -->
+<!-- Fornisce informazioni su un autore o un altra persona -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
 
-<!-- Links to a document that contains an archive link to the current document -->
+<!-- Collegamento ad un documento che contiene un archivio di link al documento corrente -->
 <link rel="archives" href="https://example.com/2003/05/" title="May 2003">
 
-<!-- Links to top level resource in an hierarchical structure -->
+<!-- Collegamento alla risorsa di livello più alto nella struttura gerarchica -->
 <link rel="index" href="https://example.com/" title="DeWitt Clinton">
 
-<!-- Gives the starting point of the document -->
+<!-- Fornisce il punto di partenza del documento -->
 <link rel="start" href="https://example.com/photos/pattern_recognition_1_about/" title="Pattern Recognition 1">
 
-<!-- Leads to the preceding resource of the sequence the current document is in -->
+<!-- Conduce alla risorsa precedente della sequenza nella quale è inserito il documento corrente -->
 <link rel="prev" href="https://example.com/opensearch/opensearch-and-openid-a-sure-way-to-get-my-attention/" title="OpenSearch and OpenID? A sure way to get my attention.">
 
-<!-- Gives a self reference - useful when the document has multiple possible references -->
+<!-- Dà un riferimento al documento stesso - utile quando il documento ha più di un possibile riferimento -->
 <link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
 
-<!-- The first, next, previous, and last documents in a series of documents, respectively -->
+<!-- Rispettivamente il primo (first), il prossimo (next), il precedente (previous) e l'ultimo (last) documento in una serie. -->
 <link rel="first" href="https://example.com/atomFeed.php">
 <link rel="next" href="https://example.com/atomFeed.php?page=4">
 <link rel="previous" href="https://example.com/atomFeed.php?page=2">
 <link rel="last" href="https://example.com/atomFeed.php?page=147">
 
-<!-- Used when using a 3rd party service to maintain a blog -->
+<!-- Usato quando si usufruisce di un servizio di terze parti per mantenere un blog -->
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 
-<!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
+<!-- Crea un commento automatico quando un altro blog WordPress inserisce un link al tuo blog o ad un tuo post -->
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 
-<!-- Notifies a url when you link to it on your site -->
+<!-- Notifica un URL quando fai riferimento a quella risorsa sul tuo sito -->
 <link rel="webmention" href="https://example.com/webmention">
 
-<!-- Loads in an external HTML file into the current HTML file -->
+<!-- Carica un file HTML esterno nel documento HTML corrente. -->
 <link rel="import" href="component.html">
 
 <!-- Open Search -->
 <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
 
-<!-- Feeds -->
+<!-- Feed -->
 <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
 <link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
 
-<!-- Prefetching, preloading, prebrowsing -->
+<!-- Prefetching, precaricamento, prebrowsing -->
 <link rel="dns-prefetch" href="//example.com/">
 <link rel="preconnect" href="https://www.example.com/">
 <link rel="prefetch" href="https://www.example.com/">
 <link rel="prerender" href="https://example.com/">
 <link rel="preload" href="image.png" as="image">
-<!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
+<!-- Maggiori informazioni (inglese): https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
-### Link: Not Recommended
-Below are the link relations which are not recommended for use:
+### Link: Non raccomandato
+Qui di seguito ci sono i tag *link* dei quali non è raccomandato l'uso:
 
 ```html
 <link rel="shortcut icon" href="path/to/favicon.ico">
 
-<!-- Not useful, proprietary and buggy, see https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/Y_2eFRh9BOs/gULYapoRBwAJ -->
+<!-- Nessuna utilità, proprietario e pieno di errori, vedi (inglese): https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/Y_2eFRh9BOs/gULYapoRBwAJ -->
 <link rel="subresource" href="styles.css">
 ```
 
 ### Favicons
 
 ``` html
-<!-- For IE 10 and below -->
-<!-- No link, just place a file called favicon.ico in the root directory -->
+<!-- Per IE 10 e precedenti -->
+<!-- Nessun link, carica semplicemente un file chiamato favicon.ico nella directory principale del sito -->
 
-<!-- For IE 11, Chrome, Firefox, Safari, Opera -->
+<!-- Per IE 11, Chrome, Firefox, Safari, Opera -->
 <link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">
 <link rel="icon" href="path/to/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="path/to/favicon-48.png" sizes="48x48" type="image/png">
 <link rel="icon" href="path/to/favicon-62.png" sizes="62x62" type="image/png">
 <link rel="icon" href="path/to/favicon-192.png" sizes="192x192" type="image/png">
-<!-- More info: https://bitsofco.de/all-about-favicons-and-touch-icons/ -->
+<!-- Maggiori informazioni (inglese): https://bitsofco.de/all-about-favicons-and-touch-icons/ -->
 ```
 
-- [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
-- [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
+- [Tutto sulle favicon (e touch icon) (inglese)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
+- [Favicon Cheat Sheet (inglese)](https://github.com/audreyr/favicon-cheat-sheet)
 
 ## Social
 
@@ -325,59 +325,59 @@ Below are the link relations which are not recommended for use:
 <meta property="fb:app_id" content="123456789">
 <meta property="og:url" content="https://example.com/page.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Content Title">
+<meta property="og:title" content="Titolo del contenuto">
 <meta property="og:image" content="https://example.com/image.jpg">
-<meta property="og:description" content="Description Here">
-<meta property="og:site_name" content="Site Name">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="">
+<meta property="og:description" content="Qui la descrizione">
+<meta property="og:site_name" content="Nome del sito">
+<meta property="og:locale" content="it_IT">
+<meta property="article:author" content="Nome dell'autore">
 <!-- Facebook: https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<!-- Open Graph: http://ogp.me/ -->
+<!-- Open Graph (inglese): http://ogp.me/ -->
 ```
 
-- [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
-- [Open Graph protocol](http://ogp.me/)
+- [Markup Open Graph](https://developers.facebook.com/docs/sharing/webmasters#markup)
+- [Protocollo Open Graph (inglese)](http://ogp.me/)
 
-### Facebook / Instant Articles
+### Facebook / Articoli interattivi
 
 ``` html
 <meta charset="utf-8">
 <meta property="op:markup_version" content="v1.0">
 
-<!-- The URL of the web version of your article -->
+<!-- L'URL della versione web del tuo articolo -->
 <link rel="canonical" href="http://example.com/article.html">
 
-<!-- The style to be used for this article -->
+<!-- Lo stile da utilizzare per questo articolo -->
 <meta property="fb:article_style" content="myarticlestyle">
 ```
 
-- [Facebook Instant Articles: Creating Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
-- [Instant Articles: Format Reference](https://developers.facebook.com/docs/instant-articles/reference)
+- [Creazione di un articolo interattivo](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
+- [Esempi di codice degli articoli interattivi](https://developers.facebook.com/docs/instant-articles/reference)
 
 ### Twitter
 
 ``` html
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@site_account">
-<meta name="twitter:creator" content="@individual_account">
-<meta name="twitter:url" content="https://example.com/page.html">
-<meta name="twitter:title" content="Content Title">
-<meta name="twitter:description" content="Content description less than 200 characters">
-<meta name="twitter:image" content="https://example.com/image.jpg">
-<!-- More info: https://dev.twitter.com/cards/getting-started -->
-<!-- Validate: https://dev.twitter.com/docs/cards/validation/validator -->
+<meta name="twitter:card" content="sommario">
+<meta name="twitter:site" content="@account_sito">
+<meta name="twitter:creator" content="@account_individuale">
+<meta name="twitter:url" content="https://example.com/pagina.html">
+<meta name="twitter:title" content="Titolo del contenuto">
+<meta name="twitter:description" content="Descrizione del contenuto, meno di 200 caratteri">
+<meta name="twitter:image" content="https://example.com/immagine.jpg">
+<!-- Maggiori informazioni (inglese): https://dev.twitter.com/cards/getting-started -->
+<!-- Validazione (inglese): https://dev.twitter.com/docs/cards/validation/validator -->
 ```
 
-- [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
-- [Twitter Card Validator](https://dev.twitter.com/docs/cards/validation/validator)
+- [Twitter Cards: Guida introduttiva (inglese)](https://dev.twitter.com/cards/getting-started)
+- [Validatore per Twitter Card (inglese)](https://dev.twitter.com/docs/cards/validation/validator)
 
 ### Google+ / Schema.org
 
 ``` html
 <link href="https://plus.google.com/+YourPage" rel="publisher">
-<meta itemprop="name" content="Content Title">
-<meta itemprop="description" content="Content description less than 200 characters">
-<meta itemprop="image" content="https://example.com/image.jpg">
+<meta itemprop="name" content="Titolo del contenuto">
+<meta itemprop="description" content="Descrizione del contenuto, meno di 200 caratteri">
+<meta itemprop="image" content="https://example.com/immagine.jpg">
 ```
 
 ### OEmbed
@@ -391,9 +391,9 @@ Below are the link relations which are not recommended for use:
   title="oEmbed Profile: XML">
 ```
 
-- [oEmbed format](http://oembed.com/)
+- [Formato oEmbed (inglese)](http://oembed.com/)
 
-## Browsers / Platforms
+## Browsers / Piattaforme
 
 ### Apple iOS
 
@@ -401,37 +401,37 @@ Below are the link relations which are not recommended for use:
 <!-- Smart App Banner -->
 <meta name="apple-itunes-app" content="app-id=APP_ID,affiliate-data=AFFILIATE_ID,app-argument=SOME_TEXT">
 
-<!-- Disable automatic detection and formatting of possible phone numbers -->
+<!-- Disattiva il rilevamento automatico e la formattazione dei possibili numeri di telefono -->
 <meta name="format-detection" content="telephone=no">
 
-<!-- Add to Home Screen -->
+<!-- Aggiungi alla schermata home -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-mobile-web-app-title" content="App Title">
 
-<!-- Touch Icons -->
+<!-- Icone Touch -->
 <link rel="apple-touch-icon" href="path/to/apple-touch-icon.png">
 <link rel="apple-touch-icon-precomposed" href="path/to/apple-touch-icon-precomposed.png">
-<!-- iOS 8+ no longer support precomposed, only apple-touch-icon is required -->
+<!-- iOS 8+ non supporta più le icone precomposed, è richiesta solo la apple-touch-icon -->
 
-<!-- In most cases, one 180×180px touch icon in the head is enough -->
-<!-- Utilize the different icon sizes if you would want unique icons -->
-<!-- determined by device. -->
+<!-- Nella maggior parte dei casi, è sufficiente una icona touch da 180×180px nel head -->
+<!-- Utilizzare le diverse dimensioni delle icone solo se si vogliono avere icone diverse -->
+<!-- in base al dispositivo. -->
 <link rel="apple-touch-icon" sizes="57x57" href="path/to/icon@57.png">
 <link rel="apple-touch-icon" sizes="72x72" href="path/to/icon@72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="path/to/icon@114.png">
 <link rel="apple-touch-icon" sizes="144x144" href="path/to/icon@144.png">
 
-<!-- Startup Image ( Deprecated ) -->
+<!-- Immagine Startup (Deprecato) -->
 <link rel="apple-touch-startup-image" href="path/to/startup.png">
 ```
 
-- [Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
+- [Meta Tag Apple (inglese)](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
 ### Apple Safari
 
 ```html
-<!-- Pinned Site -->
+<!-- Siti preferiti -->
 <link rel="mask-icon" href="path/to/icon.svg" color="red">
 ```
 
@@ -440,9 +440,9 @@ Below are the link relations which are not recommended for use:
 ``` html
 <meta name="theme-color" content="#E64545">
 
-<!-- Add to home screen -->
+<!-- Aggiugni alla home -->
 <meta name="mobile-web-app-capable" content="yes">
-<!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
+<!-- Maggiori informazioni (inglese): https://developer.chrome.com/multidevice/android/installtohomescreen -->
 ```
 
 ### Google Chrome
@@ -450,30 +450,30 @@ Below are the link relations which are not recommended for use:
 ``` html
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
 
-<!-- Disable translation prompt -->
+<!-- Disattiva l'avviso di traduzione -->
 <meta name="google" value="notranslate">
 ```
-### Google Chrome Mobile (Android Only)
+### Google Chrome Mobile (Solo Android)
 
-Since Chrome 31, you can set up your web app to "app mode" like Safari.
+Da Chrome 31, puoi impostare la tua web app in "app mode" come Safari.
 
 ``` html
-<!-- Link to a manifest and define the manifest metadata. -->
-<!-- The example of manifest.json could be found in the link below. -->
+<!-- Collegamento ad un manifest e definisce i metadata. -->
+<!-- Un esempio di manifest.json può essere trovato nel link sottostante. -->
 <link rel="manifest" href="manifest.json">
 
-<!-- Define your web page as a web app -->
+<!-- Imposta la tua pagina come "web app" -->
 <meta name="mobile-web-app-capable" content="yes">
 
-<!-- The first one is the official recommended format.  -->
+<!-- Il primo è il formato ufficiale e raccomandato.  -->
 <link rel="icon" sizes="192x192" href="nice-highres.png">
 <link rel="icon" sizes="128x128" href="niceicon.png">
-<!-- Formats with Apple prefix will be deprecated. -->
+<!-- I formati con il prefisso Apple saranno deprecati. -->
 <link rel="apple-touch-icon" sizes="128x128" href="niceicon.png">
 <link rel="apple-touch-icon-precomposed" sizes="128x128" href="niceicon.png">
 ```
 
-[Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
+[Google Developer (inglese)](https://developer.chrome.com/multidevice/android/installtohomescreen)
 
 ### Microsoft Internet Explorer
 
@@ -482,12 +482,12 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta http-equiv="cleartype" content="on">
 <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
 
-<!-- Disable link highlighting on IE 10 on Windows Phone (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->
+<!-- Disattiva l'evidenziazione dei link in IE 10 su Windows Phone (inglese) (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->
 <meta name="msapplication-tap-highlight" content="no">
 
-<!-- Pinned sites (https://msdn.microsoft.com/en-us/library/dn255024(v=vs.85).aspx) -->
-<meta name="application-name" content="Contoso Pinned Site Caption">
-<meta name="msapplication-tooltip" content="Example Tooltip Text">
+<!-- Siti aggiunti (inglese) (https://msdn.microsoft.com/en-us/library/dn255024(v=vs.85).aspx) -->
+<meta name="application-name" content="Etichetta del sito aggiunto">
+<meta name="msapplication-tooltip" content="Esempio di testo tooltip">
 <meta name="msapplication-starturl" content="/">
 
 <meta name="msapplication-config" content="http://example.com/browserconfig.xml">
@@ -508,19 +508,19 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="msapplication-window" content="width=1024;height=768">
 ```
 
-### Microsoft Internet Explorer: Legacy, Do Not Use!
+### Microsoft Internet Explorer: Legacy, non usare!
 
 ``` html
-<!-- Disable the image toolbar when you mouse over images in IE 6 (https://msdn.microsoft.com/en-us/library/ms532986(v=vs.85).aspx) -->
+<!-- Disattiva la toolbar per le immagini al mouseover in IE 6 (inglese) (https://msdn.microsoft.com/en-us/library/ms532986(v=vs.85).aspx) -->
 <meta http-equiv="imagetoolbar" content="no">
 
-<!-- Disable Windows theming to form inputs/buttons (https://support.microsoft.com/en-us/kb/322240) -->
+<!-- Disattiva il tema di windows agli input e bottoni nei form (inglese) (https://support.microsoft.com/en-us/kb/322240) -->
 <meta name="MSThemeCompatible" content="no">
 
-<!-- Disable a feature that only appeared on IE 6 beta (https://stackoverflow.com/q/2167301) -->
+<!-- Disattiva una funzione che era presente solo in IE 6 beta (inglese) (https://stackoverflow.com/q/2167301) -->
 <meta name="MSSmartTagsPreventParsing" content="true">
 
-<!-- Interpage Transitions (https://msdn.microsoft.com/en-us/library/ms532847(v=vs.85).aspx) -->
+<!-- Transizioni tra le pagine (inglese) (https://msdn.microsoft.com/en-us/library/ms532847(v=vs.85).aspx) -->
 <meta http-equiv="Page-Enter" content="revealtrans(duration=2,transition=2)">
 <meta http-equiv="Page-Exit" content="revealtrans(duration=3,transition=12)">
 <meta http-equiv="Site-Enter" content="revealtrans(duration=2,transition=2)">
@@ -540,107 +540,112 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta property="al:android:package" content="org.applinks">
 <!-- Web Fallback -->
 <meta property="al:web:url" content="http://applinks.org/documentation">
-<!-- More info: http://applinks.org/documentation/ -->
+<!-- Maggiori informazioni (inglese): http://applinks.org/documentation/ -->
 ```
 
-- [App Links Docs](http://applinks.org/documentation/)
+- [Documentazione *App Links* (inglese)](http://applinks.org/documentation/)
 
-## Browsers (Chinese)
+## Browser (Cinesi)
 
 ### 360 Browser
 
 ``` html
-<!-- select rendering engine in order -->
+<!-- Selezione il motore di rendering, in ordine -->
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
 
-### QQ Mobile Browser
+### QQ Browser mobile
 
 ``` html
-<!-- Locks the screen into the specified orientation -->
+<!-- Blocca lo schermo in un orientamento specifico -->
 <meta name="x5-orientation" content="landscape/portrait">
-<!-- Display this page in fullscreen -->
+<!-- Visualizza la pagina a schermo intero -->
 <meta name="x5-fullscreen" content="true">
-<!-- Page will be displayed in "application mode"(fullscreen,etc.) -->
+<!-- La pagina sarà Visualizzata in "application mode"(fullscreen,ecc.) -->
 <meta name="x5-page-mode" content="app">
 ```
 
-### UC Mobile Browser
+### UC Browser mobile
 
 ``` html
-<!-- Locks the screen into the specified orientation -->
+<!-- Blocca lo schermo in un orientamento specifico -->
 <meta name="screen-orientation" content="landscape/portrait">
-<!-- Display this page in fullscreen -->
+<!-- Visualizza la pagina a schermo intero -->
 <meta name="full-screen" content="yes">
-<!-- UC browser will display images even if in "text mode" -->
+<!-- Il browser UC visualizzerà le immagini anche se è in "modalità testuale" -->
 <meta name="imagemode" content="force">
-<!-- Page will be displayed in "application mode"(fullscreen,forbiding gesture, etc.) -->
+<!-- La pagina sarà Visualizzata in "application mode"(fullscreen,forbiding gesture, etc.) -->
 <meta name="browsermode" content="application">
-<!-- Disabled the UC browser's "night mode" in this page -->
+<!-- Disattiva la "modalità notturna" del browser UC in questa pagina -->
 <meta name="nightmode" content="disable">
-<!-- Simplify the page to reduce data transfer -->
+<!-- Semplifica la pagina per ridurre il trasferimento dati -->
 <meta name="layoutmode" content="fitscreen">
-<!-- Disable the UC browser's feature of "scaling font up when there are many words in this page" -->
+<!-- Disattiva la funzione del browser UC che "aumenta la dimensione del testo quando ci sono troppe parole in questa pagina" -->
 <meta name="wap-font-scale" content="no">
 ```
 
-- [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
+- [Documentazione del browser UC (cinese)](http://www.uc.cn/download/UCBrowser_U3_API.doc)
 
-## Notes
+## Note
 
 ### Performance
-Moving the `href` attribute to the beginning of an element improves compression when GZIP is enabled, because the `href` attribute is used in `a`, `base` and `link` tags.
+Spostare l'attributo `href` all'inizio degli elementi aumenta la compressione quando è attiva la compressione GZIP, perchè l'attributo `href` è utilizzato nei tag `a`, `base` e `link`
 
-Example:
+Esempio:
 
 ``` html
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 ```
 
-## Other Resources
+## Altre risorse
 
-- [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
-- [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
+- [Documentazione di HTML5 Boilerplate: l'HTML (inglese)](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
+- [Documentazione di HTML5 Boilerplate: estensione e personalizzazione (inglese)](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
 
-## Related Projects
+## Progetti correlati
 
-- [Atom HTML Head Snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Atom package for `HEAD` snippets
-- [Sublime Text HTML Head Snippets](https://github.com/marcobiedermann/sublime-head-snippets) - Sublime Text package for `HEAD` snippets
-- [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
-- [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js
+- [Head Snippets per Atom](https://github.com/joshbuchea/atom-html-head-snippets) - Pacchetto Atom per gli snippet per il tag `HEAD`
+- [Head Snippets per Sublime Text](https://github.com/marcobiedermann/sublime-head-snippets) - Pacchetto Sublime Text per gli snippet per il tag `HEAD`
+- [head-it](https://github.com/hemanth/head-it) - Interfaccia CLI per gli snippet per il tag `HEAD`
+- [vue-head](https://github.com/ktquez/vue-head) - Manipola le meta informazioni del tag `HEAD` per Vue.js
 
-## Other Formats
+## Altri formati
 
-- [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
+- [PDF (inglese)](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
 
-## Translations
+## Traduzioni
 
-- [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
-- [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
-- [Japanese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
-- [Russian/Русский](https://github.com/Konfuze/HEAD)
+- [Cinese (Semplificato)](https://github.com/Amery2010/HEAD)
+- [Giapponese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
+- [Italian](https://github.com/Fakkio/HEAD)
+- [Portoghese Brasiliano](https://github.com/Webschool-io/HEAD)
+- [Russo/Русский](https://github.com/Konfuze/HEAD)
 
-## Contributing
+## Contribuire
 
-Open an issue or a pull request to suggest changes or additions.
+Apri un *issue* o fai una *pull request* per suggerire modifiche o aggiunte.
 
-Please follow these steps for pull requests:
+Per favore, segui questi passi per una *pull request*:
 
-- Modify only one tag, or one related set of tags at a time
-- Use double quotes on attributes
-- Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional
-- Consider including a link to documentation that supports your change
+- Modifica solo un tag o un insieme di tag collegati alla volta
+- Usa gli apici doppi per gli attributi
+- Non inserire lo slash finale negli elementi *self-closing* — le specifiche HTML5 dicono che è opzionale
+- Considera di inserire un link alla documentazine che supporti le tue modifiche
 
-### Contributors
+### Contributori
 
-Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
+Dà un'occhiata al magnifico [Contributori](https://github.com/joshbuchea/HEAD/graphs/contributors).
 
-## Author
+## Autore
 
 **[Josh Buchea](http://joshbuchea.com/)**
 
-## License
+## traduzione
 
-[CC0 License](LICENSE)
+**[Fakkio](http://jeflab.it)**
+
+## Licenza
+
+[CC0 Licenza](LICENSE)
 
 ![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png "CC0")
