@@ -13,7 +13,7 @@ Un elenco di tutto ciò che potrebbe esseci nel `<head>` del tuo documento
   - [Favicon](#favicon)
 - [Social](#social)
   - [Facebook / Open Graph](#facebook--open-graph)
-  - [Facebook / Articoli interattivi](#facebook--instant-articles)
+  - [Facebook / Articoli interattivi](#facebook--articoli-interattivi)
   - [Twitter](#twitter)
   - [Google+ / Schema.org](#google--schemaorg)
   - [OEmbed](#oembed)
@@ -24,7 +24,7 @@ Un elenco di tutto ciò che potrebbe esseci nel `<head>` del tuo documento
   - [Google Chrome](#google-chrome)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
   - [Microsoft Internet Explorer: Legacy, non usare!](#microsoft-internet-explorer-legacy-non-usare)
-- [Browser (Cinesi)](#browser-cinese)
+- [Browser (Cinesi)](#browser-cinesi)
   - [360 Browser](#360-browser)
   - [QQ Browser mobile](#qq-browser-mobile)
   - [UC Browser mobile](#uc-browser-mobile)
@@ -37,6 +37,7 @@ Un elenco di tutto ciò che potrebbe esseci nel `<head>` del tuo documento
 - [Traduzioni](#traduzioni)
 - [Contribuire](#contribuire)
 - [Autore](#autore)
+- [Traduzione](#traduzione)
 - [Licenza](#licenza)
 
 ## Minimo consigliato
@@ -299,7 +300,7 @@ Qui di seguito ci sono i tag *link* dei quali non è raccomandato l'uso:
 <link rel="subresource" href="styles.css">
 ```
 
-### Favicons
+### Favicon
 
 ``` html
 <!-- Per IE 10 e precedenti -->
@@ -393,7 +394,7 @@ Qui di seguito ci sono i tag *link* dei quali non è raccomandato l'uso:
 
 - [Formato oEmbed (inglese)](http://oembed.com/)
 
-## Browsers / Piattaforme
+## Browser / Piattaforme
 
 ### Apple iOS
 
@@ -527,7 +528,7 @@ Da Chrome 31, puoi impostare la tua web app in "app mode" come Safari.
 <meta http-equiv="Site-Exit" content="revealtrans(duration=3,transition=12)">
 ```
 
-## App Links
+## Link app
 
 ``` html
 <!-- iOS -->
@@ -640,7 +641,7 @@ Dà un'occhiata al magnifico [Contributori](https://github.com/joshbuchea/HEAD/g
 
 **[Josh Buchea](http://joshbuchea.com/)**
 
-## traduzione
+## Traduzione
 
 **[Fakkio](http://jeflab.it)**
 
