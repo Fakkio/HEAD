@@ -618,7 +618,7 @@ Esempio:
 
 - [Cinese (Semplificato)](https://github.com/Amery2010/HEAD)
 - [Giapponese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
-- [Italian](https://github.com/Fakkio/HEAD)
+- [Italiano](https://github.com/Fakkio/HEAD)
 - [Portoghese Brasiliano](https://github.com/Webschool-io/HEAD)
 - [Russo/Русский](https://github.com/Konfuze/HEAD)
 
