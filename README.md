@@ -425,6 +425,10 @@ Qui di seguito ci sono i tag *link* dei quali non è raccomandato l'uso:
 
 <!-- Immagine Startup (Deprecato) -->
 <link rel="apple-touch-startup-image" href="path/to/startup.png">
+
+<!-- iOS app deep linking -->
+<meta name="apple-itunes-app" content="app-id=APP-ID, app-argument=http/url-sample.com">
+<link rel="alternate" href="ios-app://APP-ID/http/url-sample.com">
 ```
 
 - [Meta Tag Apple (inglese)](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
@@ -444,6 +448,10 @@ Qui di seguito ci sono i tag *link* dei quali non è raccomandato l'uso:
 <!-- Aggiugni alla home -->
 <meta name="mobile-web-app-capable" content="yes">
 <!-- Maggiori informazioni (inglese): https://developer.chrome.com/multidevice/android/installtohomescreen -->
+
+<!-- Android app deep linking -->
+<meta name="google-play-app" content="app-id=package-name">
+<link rel="alternate" href="android-app://package-name/http/url-sample.com">
 ```
 
 ### Google Chrome
