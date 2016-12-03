@@ -125,7 +125,7 @@ Qui sotto sono riportati i tag essenziali per un sito base, minimalista:
 <meta name="rating" content="General">
 
 <!-- Permette il controllo di come sono passate le informazioni del referrer -->
-<meta name="referrer" content="never">
+<meta name="referrer" content="no-referrer">
 
 <!-- Disattiva il rilevamento automatico e la formattazione dei possibili numeri di telefono -->
 <meta name="format-detection" content="telephone=no">
@@ -379,6 +379,14 @@ Qui di seguito ci sono i tag *link* dei quali non è raccomandato l'uso:
 <meta itemprop="name" content="Titolo del contenuto">
 <meta itemprop="description" content="Descrizione del contenuto, meno di 200 caratteri">
 <meta itemprop="image" content="https://example.com/immagine.jpg">
+```
+
+### Pinterest
+
+Pinterest permette di impedire che qualcuno salvi qualcosa dal tuo sito, come spiegato nel loro [help center](https://help.pinterest.com/it/articles/prevent-pinning-your-site). L'attributo `description` è opzionale.
+
+``` html
+<meta name="pinterest" content="nopin" description="Spiacente, non puoi aggiungere Pin dal mio sito web!" />
 ```
 
 ### OEmbed
@@ -653,8 +661,8 @@ Dà un'occhiata al magnifico [Contributori](https://github.com/joshbuchea/HEAD/g
 
 **[Fakkio](http://jeflab.it)**
 
-## Licenza
+## License
 
-[CC0 Licenza](LICENSE)
+[![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
-![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png "CC0")
+Per quanto possibile in base ai termini di legge, [Josh Buchea](http://joshbuchea.com) rinuncia a tutti i copyright e diritti connessi o relativi a questo lavoro.
